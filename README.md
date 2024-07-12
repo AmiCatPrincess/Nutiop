@@ -10,20 +10,14 @@ function prompt(question, callback) {
     callback(data.toString().trim())
   })
 }
+.wrap {
+  filter: drop-shadow(0 0 10px gray);
+}
 
-prompt(
-  'Введите числа через запятую, например "3.9, 6, 7.8, 6", без кавычек: ',
-  function (input) {
-    let a = input.split(',')
-    console.log('Введено:', a)
-    let b = 0
-
-    a.forEach((num) => {
-      b += parseFloat(num)
-    })
-    console.log('Среднее арифметическое данных чисел:', b / a.length)
-    prompt('Нажмите Enter, чтобы выйти: ', function (input) {
-      process.exit()
-    })
-  },
-)
+.element {
+  display: inline-block;
+  width: 111px;
+  height: 111px;
+  background-color: #fff;
+  border-radius: 2em;
+}
