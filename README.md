@@ -21,3 +21,6 @@ function prompt(question, callback) {
   background-color: #fff;
   border-radius: 2em;
 }
+arr = [7,4,9,2,6,3]
+insertionsort(arr)
+print('Sorted %s'  %arr) # sorted [2, 3, 4, 6, 7, 9]
