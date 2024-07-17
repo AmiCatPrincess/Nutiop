@@ -12,5 +12,3 @@ function prompt(question, callback) {
 }
 .wrap {
   filter: drop-shadow(0 0 10px gray);
-}
-
